@@ -1,0 +1,41 @@
+<body>
+    <div class="container">
+        <h1>Archivio Patronato</h1>
+        <form id="clienteForm">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="text" id="cognome" placeholder="Cognome" required>
+            <input type="text" id="codiceFiscale" placeholder="Codice Fiscale" required>
+            <input type="date" id="dataPresentazione" required>
+            <input type="tel" id="cellulare" placeholder="Numero Cellulare" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <select id="settore">
+                <option value="">Seleziona Settore</option>
+                <option value="CAF">CAF</option>
+                <option value="PATRONATO">PATRONATO</option>
+                <option value="DOTT COMMERCIALISTA">DOTT COMMERCIALISTA</option>
+            </select>
+            <input type="text" id="praticaNumero" placeholder="Numero Pratica" required>
+            <input type="text" id="nomePratica" placeholder="Nome Pratica" required>
+            <select id="statoPratica">
+                <option value="">Seleziona Stato</option>
+                <option value="POSITIVA">POSITIVA</option>
+                <option value="IN LAVORAZIONE">IN LAVORAZIONE</option>
+                <option value="RESPINTA">RESPINTA</option>
+            </select>
+            <input type="number" id="prezzoPratica" placeholder="Prezzo Pratica" required>
+            <select id="pagamento">
+                <option value="DA PAGARE">DA PAGARE</option>
+                <option value="PAGATA">PAGATA</option>
+            </select>
+            <button type="submit">Salva Cliente</button>
+        </form>
+        
+        <h2>Ricerca Cliente</h2>
+        <input type="text" id="search" placeholder="Cerca per Cognome o Codice Fiscale">
+        <button onclick="cercaCliente()">Cerca</button>
+        <div id="risultati"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
